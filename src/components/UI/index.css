@@ -1,0 +1,15 @@
+:root {
+  --color-white: #fff;
+  --color-black: #000;
+  --color-gray: #9c9c9c;
+
+  --spacing-small: 10px;
+
+  --font-bold: 600;
+  --transition: 0.4s;
+  --font-family-main: sans-serif;
+
+  --font-size-small: 14px;
+
+  --border-radius-small: 3px;
+}

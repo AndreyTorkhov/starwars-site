@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import React, { useEffect, useState, Suspense } from "react";
 import { useParams } from "react-router";
+import { useSelector } from "react-redux";
 
 import { withErrorApi } from "@hoc/withErrorApi";
 
@@ -25,10 +26,15 @@ const PersonPage = ({ match, setErrorApi }) => {
   const [personName, setPersonName] = useState(null);
   const [personPhoto, setPersonPhoto] = useState(null);
   const [personFilms, setPersonFilms] = useState(null);
+  const [personFavorite, setPersonFavorite] = useState(false);
+
+  const storeDate = useSelector((state) => state.favoriteReducer);
 
   useEffect(() => {
     (async () => {
       const res = await getApiResource(`${API_PERSON}/${id}/`);
+
+      storeDate[id] ? setPersonFavorite(true) : setPersonFavorite(false);
 
       if (res) {
         setPersonInfo([
@@ -61,7 +67,13 @@ const PersonPage = ({ match, setErrorApi }) => {
         <span className={styles.person__name}>{personName}</span>
 
         <div className={styles.container}>
-          <PersonPhoto personPhoto={personPhoto} personName={personName} />
+          <PersonPhoto
+            personId={id}
+            personPhoto={personPhoto}
+            personName={personName}
+            personFavorite={personFavorite}
+            setPersonFavorite={setPersonFavorite}
+          />
 
           {personInfo && <PersonInfo personInfo={personInfo} />}
 

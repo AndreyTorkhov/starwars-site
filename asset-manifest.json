@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/starwars-site/static/css/main.a3c619dc.css",
-    "main.js": "/starwars-site/static/js/main.dbe68c78.js",
+    "main.js": "/starwars-site/static/js/main.1b829407.js",
     "static/css/152.4b47e62f.chunk.css": "/starwars-site/static/css/152.4b47e62f.chunk.css",
     "static/js/152.e5627c22.chunk.js": "/starwars-site/static/js/152.e5627c22.chunk.js",
     "static/media/Zvezdnoe-nebo.jpg": "/starwars-site/static/media/Zvezdnoe-nebo.25e4c5f570a388eb21a8.jpg",
@@ -24,12 +24,12 @@
     "index.html": "/starwars-site/index.html",
     "static/media/arrow.svg": "/starwars-site/static/media/arrow.352019398160d8c02511940fd89fe3b9.svg",
     "main.a3c619dc.css.map": "/starwars-site/static/css/main.a3c619dc.css.map",
-    "main.dbe68c78.js.map": "/starwars-site/static/js/main.dbe68c78.js.map",
+    "main.1b829407.js.map": "/starwars-site/static/js/main.1b829407.js.map",
     "152.4b47e62f.chunk.css.map": "/starwars-site/static/css/152.4b47e62f.chunk.css.map",
     "152.e5627c22.chunk.js.map": "/starwars-site/static/js/152.e5627c22.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a3c619dc.css",
-    "static/js/main.dbe68c78.js"
+    "static/js/main.1b829407.js"
   ]
 }

@@ -4,14 +4,13 @@
 /node_modules
 /.pnp
 .pnp.js
-/.storybook
-/storybook-static
 
 # testing
 /coverage
 
 # production
 /build
+/storybook-static
 
 # misc
 .DS_Store
@@ -25,3 +24,5 @@ yarn-debug.log*
 yarn-error.log*
 
 *storybook.log
+.eslintcache
+debug.log
